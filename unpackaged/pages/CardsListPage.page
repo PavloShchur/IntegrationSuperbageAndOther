@@ -1,0 +1,88 @@
+<apex:page controller="CardsListPageController" sidebar="false" showHeader="false" id="thePage"
+           contentType="{! renderedContentType }" renderAs="{! renderingService}">
+    <apex:stylesheet value="{!$Resource.CardsListResource}"/>
+    <apex:form id="theForm">
+        <apex:pageBlock id="thePageBlock">
+            <apex:commandLink action="{! saveToPdf}" value="Save to PDF">
+            	<apex:param assignTo="{! renderedFileName}" value="Card-List.pdf"/>
+            </apex:commandLink>
+            <apex:inputText value="{!searchString}" label="Input"/>
+            <apex:commandButton value="Search accounts" action="{!searchCard}"/> 
+            <apex:commandButton value="Clear records" action="{!clear}"/> 
+            <apex:pageBlockTable value="{!cards}" var="record"  id="thePageBlockTable" styleClass="oblique"> 
+                <apex:column >
+                    <apex:inputCheckbox value="{!record.selected}"/>
+                </apex:column>
+                <apex:column >
+                    <apex:outputField value="{!record.card.Name}"/>
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!ViewData}" value="Name{!IF(sortExpression=='Name',IF(sortDirection='ASC','▼','▲'),'')}">
+                            <apex:param value="Name" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:commandLink></apex:facet>
+                </apex:column>
+                <apex:column >
+                    <apex:outputField value="{!record.card.Created_By_Id__c}" />
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!ViewData}" value="External Id{!IF(sortExpression=='Created_By_Id__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                            <apex:param value="Created_By_Id__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                </apex:column>
+                <apex:column >
+                    <apex:outputField value="{!record.card.Account_Name__c}" />
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!ViewData}" value="Account Name{!IF(sortExpression=='Account_Name__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                            <apex:param value="Account_Name__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:commandLink>
+                    </apex:facet>
+                </apex:column>
+                <apex:column >
+                    <apex:outputField value="{!record.card.Account__c}" />
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!ViewData}" value="Related Account{!IF(sortExpression=='Account__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                            <apex:param value="Account__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:commandLink>  
+                    </apex:facet>
+                </apex:column>
+                <apex:column >
+                    <apex:outputField styleClass="oblique" value="{!record.card.First_Name__c}" />
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!ViewData}" value="Contact Name{!IF(sortExpression=='First_Name__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                            <apex:param value="First_Name__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:commandLink>  
+                    </apex:facet>
+                </apex:column>
+                <apex:column >
+                    <apex:outputField value="{!record.card.Last_Name__c}" />
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!ViewData}" value="Contact LastName{!IF(sortExpression=='Last_Name__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                            <apex:param value="Last_Name__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:commandLink>    
+                    </apex:facet>
+                </apex:column>
+                <apex:column >
+                    <apex:outputField value="{!record.card.Contact__c}" />
+                    <apex:facet name="header">
+                        <apex:outputText >
+                            <apex:commandLink styleClass="redColor" action="{!ViewData}" value="Related Contact{!IF(sortExpression=='Contact__c',IF(sortDirection='ASC','▼','▲'),'')}">
+                                <apex:param value="Contact__c" name="column" assignTo="{!sortExpression}"></apex:param>
+                            </apex:commandLink>
+                        </apex:outputText>
+                    </apex:facet>
+                </apex:column>
+                <apex:inlineEditSupport event="ondblClick"
+                                        showOnEdit="saveButton" hideOnEdit="editButton" />
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Edit" action="{!save}" id="editButton" />
+                <apex:commandButton value="Save" action="{!save}" id="saveButton" />
+                <apex:commandButton value="Process Selected" action="{!processSelected}" rerender="theForm"/>
+                <apex:outputPanel layout="block" html-align="right">
+                <apex:commandButton value="New Card" action="{!newCard}" /> 
+                </apex:outputPanel>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    contentType: <apex:outputText value="{! renderedContentType}"/><br/>
+    renderingService: <apex:outputText value="{! renderedContentType}"/><br/>
+</apex:page>

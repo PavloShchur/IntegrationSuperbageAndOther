@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AccountTriggerHelper</members>
+        <members>AccountTriggerHelperTest</members>
+        <members>BillingCalloutService</members>
+        <members>BillingCalloutServiceMock</members>
+        <members>BillingCalloutServiceMockFailure</members>
+        <members>BillingCalloutServiceTest</members>
+        <members>BillingServiceProxy</members>
+        <members>CardTriggerHelper</members>
+        <members>CardTriggerHelperTest</members>
+        <members>CardWrapper</members>
+        <members>CardsListPageController</members>
+        <members>ChangePasswordController</members>
+        <members>ChangePasswordControllerTest</members>
+        <members>CommunitiesLandingController</members>
+        <members>CommunitiesLandingControllerTest</members>
+        <members>CommunitiesLoginController</members>
+        <members>CommunitiesLoginControllerTest</members>
+        <members>CommunitiesSelfRegConfirmController</members>
+        <members>CommunitiesSelfRegConfirmControllerTest</members>
+        <members>CommunitiesSelfRegController</members>
+        <members>CommunitiesSelfRegControllerTest</members>
+        <members>Constants</members>
+        <members>ContactTestUtilities</members>
+        <members>ContactTriggerHelper</members>
+        <members>ContactTriggerHelperTest</members>
+        <members>DTOScannedBusinessCard</members>
+        <members>ForgotPasswordController</members>
+        <members>ForgotPasswordControllerTest</members>
+        <members>GeneralService</members>
+        <members>ImageRESTResource</members>
+        <members>ImageRESTService</members>
+        <members>ImageRESTServiceTest</members>
+        <members>InstallationTests</members>
+        <members>LightningForgotPasswordController</members>
+        <members>LightningForgotPasswordControllerTest</members>
+        <members>LightningLoginFormController</members>
+        <members>LightningLoginFormControllerTest</members>
+        <members>LightningSelfRegisterController</members>
+        <members>LightningSelfRegisterControllerTest</members>
+        <members>MetadataService</members>
+        <members>MetadataServiceExamples</members>
+        <members>MyProfilePageController</members>
+        <members>MyProfilePageControllerTest</members>
+        <members>NewCardPageController</members>
+        <members>ProjectCalloutService</members>
+        <members>ProjectCalloutServiceMock</members>
+        <members>ProjectCalloutServiceMockFailure</members>
+        <members>ProjectCalloutServiceTest</members>
+        <members>ProjectRESTService</members>
+        <members>ProjectRESTServiceTest</members>
+        <members>SObjectWrapper</members>
+        <members>SaveAsPdfExtension</members>
+        <members>ScannedBusinessCardDAO</members>
+        <members>ScannedBusinessCardDTO</members>
+        <members>ScannedBusinessCardRESTResource</members>
+        <members>ScannedBusinessCardRESTService</members>
+        <members>ScannedBusinessCarsRESTServiceTest</members>
+        <members>SiteLoginController</members>
+        <members>SiteLoginControllerTest</members>
+        <members>SiteRegisterController</members>
+        <members>SiteRegisterControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>SiteFooter</members>
+        <members>SiteHeader</members>
+        <members>SiteLogin</members>
+        <members>SitePoweredBy</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>AnswersHome</members>
+        <members>BandwidthExceeded</members>
+        <members>CardsListPage</members>
+        <members>ChangePassword</members>
+        <members>CommunitiesLanding</members>
+        <members>CommunitiesLogin</members>
+        <members>CommunitiesSelfReg</members>
+        <members>CommunitiesSelfRegConfirm</members>
+        <members>CommunitiesTemplate</members>
+        <members>Example</members>
+        <members>Exception</members>
+        <members>FileNotFound</members>
+        <members>ForgotPassword</members>
+        <members>ForgotPasswordConfirm</members>
+        <members>IdeasHome</members>
+        <members>InMaintenance</members>
+        <members>MyProfilePage</members>
+        <members>NewCardPage</members>
+        <members>SiteLogin</members>
+        <members>SiteRegister</members>
+        <members>SiteRegisterConfirm</members>
+        <members>SiteTemplate</members>
+        <members>StdExceptionTemplate</members>
+        <members>Unauthorized</members>
+        <members>UnderConstruction</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>AccountTrigger</members>
+        <members>CardTrigger</members>
+        <members>ContactTrigger</members>
+        <members>ProjectTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>forgotPassword</members>
+        <members>loginForm</members>
+        <members>selfRegister</members>
+        <members>setExpId</members>
+        <members>setStartUrl</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Scanned_Business_Cards</members>
+        <members>standard__AppLauncher</members>
+        <members>standard__Chatter</members>
+        <members>standard__Community</members>
+        <members>standard__Content</members>
+        <members>standard__LightningSales</members>
+        <members>standard__LightningSalesConsole</members>
+        <members>standard__LightningService</members>
+        <members>standard__Marketing</members>
+        <members>standard__Platform</members>
+        <members>standard__Sales</members>
+        <members>standard__Service</members>
+        <members>standard__ServiceConsole</members>
+        <members>standard__Sites</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>AccountCleanInfo</members>
+        <members>AccountContactRole</members>
+        <members>Activity</members>
+        <members>Asset</members>
+        <members>AssetRelationship</members>
+        <members>AssistantProgress</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>CaseContactRole</members>
+        <members>ChannelProgram</members>
+        <members>ChannelProgramLevel</members>
+        <members>ChannelProgramMember</members>
+        <members>Contact</members>
+        <members>ContactCleanInfo</members>
+        <members>ContentVersion</members>
+        <members>Contract</members>
+        <members>ContractContactRole</members>
+        <members>Customer_Satisfaction_Survey__c</members>
+        <members>DandBCompany</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>EmailMessage</members>
+        <members>Event</members>
+        <members>ExchangeUserMapping</members>
+        <members>FeedItem</members>
+        <members>ForecastingCategoryMapping</members>
+        <members>Idea</members>
+        <members>Lead</members>
+        <members>LeadCleanInfo</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>NetworkMember</members>
+        <members>Opportunity</members>
+        <members>OpportunityCompetitor</members>
+        <members>OpportunityContactRole</members>
+        <members>OpportunityLineItem</members>
+        <members>Order</members>
+        <members>OrderItem</members>
+        <members>PartnerFundAllocation</members>
+        <members>PartnerFundClaim</members>
+        <members>PartnerFundRequest</members>
+        <members>PartnerMarketingBudget</members>
+        <members>PartnerRole</members>
+        <members>Pricebook2</members>
+        <members>PricebookEntry</members>
+        <members>Product2</members>
+        <members>Project__c</members>
+        <members>Scanned_Business_Cards__c</members>
+        <members>Scorecard</members>
+        <members>ScorecardMetric</members>
+        <members>ServiceCredentials__c</members>
+        <members>ServiceTokens__c</members>
+        <members>Site</members>
+        <members>SocialPersona</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>Task</members>
+        <members>Test__c</members>
+        <members>User</members>
+        <members>UserProvisioningRequest</members>
+        <members>invoices__x</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Customer_Satisfaction_Survey__c</members>
+        <members>Project__c</members>
+        <members>Scanned_Business_Cards__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Calculate_discounts</members>
+        <members>Hello_World</members>
+        <members>Opportunity_Management</members>
+        <members>Opportunity_Management-1</members>
+        <members>Opportunity_Management-2</members>
+        <members>Opportunity_Management-3</members>
+        <members>Opportunity_Management-4</members>
+        <members>Opportunity_Management-5</members>
+        <members>Sample_Flow</members>
+        <members>Survey_customers</members>
+        <members>Update_Opportunity</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Account-Account %28Marketing%29 Layout</members>
+        <members>Account-Account %28Sales%29 Layout</members>
+        <members>Account-Account %28Support%29 Layout</members>
+        <members>Account-Account Layout</members>
+        <members>Asset-Asset Layout</members>
+        <members>AssetRelationship-Asset Relationship Layout</members>
+        <members>Campaign-Campaign Layout</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>Case-Case %28Marketing%29 Layout</members>
+        <members>Case-Case %28Sales%29 Layout</members>
+        <members>Case-Case %28Support%29 Layout</members>
+        <members>Case-Case Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>ChannelProgram-Channel Program Layout</members>
+        <members>ChannelProgramLevel-Channel Program Level Layout</members>
+        <members>ChannelProgramMember-Channel Program Member Layout</members>
+        <members>Contact-Contact %28Marketing%29 Layout</members>
+        <members>Contact-Contact %28Sales%29 Layout</members>
+        <members>Contact-Contact %28Support%29 Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>ContentVersion-Content Version Layout</members>
+        <members>Contract-Contract Layout</members>
+        <members>Customer_Satisfaction_Survey__c-Customer Satisfaction Survey Layout</members>
+        <members>DandBCompany-D%26B Company Layout</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>EmailMessage-Email Message Layout</members>
+        <members>Event-Event Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
+        <members>Global-Global Layout</members>
+        <members>Idea-Idea Layout</members>
+        <members>Lead-Lead %28Marketing%29 Layout</members>
+        <members>Lead-Lead %28Sales%29 Layout</members>
+        <members>Lead-Lead %28Support%29 Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>Macro-Macro Layout</members>
+        <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
+        <members>Opportunity-Opportunity %28Sales%29 Layout</members>
+        <members>Opportunity-Opportunity %28Support%29 Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
+        <members>Order-Order Layout</members>
+        <members>OrderItem-Order Product Layout</members>
+        <members>PartnerFundAllocation-Partner Fund Allocation Layout</members>
+        <members>PartnerFundClaim-Partner Fund Claim Layout</members>
+        <members>PartnerFundRequest-Partner Fund Request Layout</members>
+        <members>PartnerMarketingBudget-Partner Marketing Budget Layout</members>
+        <members>Pricebook2-Price Book Layout</members>
+        <members>PricebookEntry-Price Book Entry Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>Project__c-Project Layout</members>
+        <members>Scanned_Business_Cards__c-Scanned Business Card Layout</members>
+        <members>Scorecard-Scorecard Layout</members>
+        <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>SocialPersona-Social Persona Layout</members>
+        <members>SocialPost-Social Post Layout</members>
+        <members>Solution-Solution Layout</members>
+        <members>Task-Task Layout</members>
+        <members>Test__c-Test Layout</members>
+        <members>User-User Layout</members>
+        <members>UserProvAccount-User Provisioning Account Layout</members>
+        <members>UserProvisioningLog-User Provisioning Log Layout</members>
+        <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+        <members>invoices__x-invoices Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>CardsListResource</members>
+        <members>SiteSamples</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Asset</members>
+        <members>AssetRelationship</members>
+        <members>AssistantProgress</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>ChannelProgram</members>
+        <members>ChannelProgramLevel</members>
+        <members>ChannelProgramMember</members>
+        <members>Contact</members>
+        <members>Contract</members>
+        <members>Customer_Satisfaction_Survey__c</members>
+        <members>DandBCompany</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>EmailMessage</members>
+        <members>Event</members>
+        <members>ExchangeUserMapping</members>
+        <members>FeedItem</members>
+        <members>Idea</members>
+        <members>Lead</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>NetworkMember</members>
+        <members>Opportunity</members>
+        <members>OpportunityLineItem</members>
+        <members>Order</members>
+        <members>OrderItem</members>
+        <members>Organization</members>
+        <members>PartnerFundAllocation</members>
+        <members>PartnerFundClaim</members>
+        <members>PartnerFundRequest</members>
+        <members>PartnerMarketingBudget</members>
+        <members>Product2</members>
+        <members>Project__c</members>
+        <members>Scanned_Business_Cards__c</members>
+        <members>ServiceCredentials__c</members>
+        <members>ServiceTokens__c</members>
+        <members>Site</members>
+        <members>SocialPersona</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>Task</members>
+        <members>Test__c</members>
+        <members>User</members>
+        <members>UserLicense</members>
+        <members>UserProvisioningRequest</members>
+        <members>invoices__x</members>
+        <name>Workflow</name>
+    </types>
+    <version>41.0</version>
+</Package>

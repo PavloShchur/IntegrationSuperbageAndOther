@@ -1,0 +1,17 @@
+<apex:page controller="NewCardPageController">
+    <apex:form >
+        <apex:pageBlock title="New Business Card">
+            <apex:pageBlockSection >
+                <apex:inputField value="{!card.Account_Name__c}"/>
+                <apex:inputField value="{!card.Created_By_Id__c}" label="External Id"/>
+                <apex:inputField value="{!card.Email__c}"/>
+                <apex:inputField value="{!card.First_Name__c}" label="Contact Name"/>
+                <apex:inputField value="{!card.Last_Name__c}" label="Contact LastName"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}" />
+                <apex:commandButton value="Cards" action="{!listOfCards}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
